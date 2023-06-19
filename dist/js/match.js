@@ -1,0 +1,1 @@
+$(".three-list").slick({dots:!1,arrow:!1,infinite:!1,speed:500,fade:!1,cssEase:"linear",slidesToShow:3,slidesToScroll:1,responsive:[{breakpoint:991,settings:{variableWidth:!0,slidesToShow:1}}]});

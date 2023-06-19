@@ -1,0 +1,1 @@
+function popupOpen(p){$(".pop-act").addClass("show-pop").fadeIn(),$(".pop-act .pop-bx").removeClass("active"),$(".pop-act .pop-bx").eq(p-1).addClass("active")}$(".clos-btn").on("click",(function(){$(".pop-act").removeClass("show-pop").fadeOut(),$("body,html,.sub_menu").removeAttr("style")}));

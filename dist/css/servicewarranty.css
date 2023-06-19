@@ -1,0 +1,876 @@
+body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+#modalBg {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(34, 32, 64, 0.7);
+}
+
+.closebtn {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  z-index: 10;
+  background: #a5a5a5;
+  color: #fff;
+  border-radius: 50%;
+}
+@media all and (max-width: 766px) {
+  .closebtn {
+    right: 15px;
+  }
+}
+.closebtn .close {
+  display: inline-block;
+  width: 22px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -1px 0 0 -11px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background: #fff;
+}
+.closebtn .close::after {
+  content: "";
+  height: 22px;
+  width: 2px;
+  margin: -11px 0 0 -1px;
+  left: 50%;
+  top: 50%;
+  background: #fff;
+  position: absolute;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+@media all and (min-width: 768px) {
+  .closebtn:hover {
+    background: #ff7f00;
+  }
+}
+
+.modal {
+  position: fixed;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  border-radius: 1em;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 2.62% 5.25%;
+  background: #fff;
+}
+@media all and (max-width: 766px) {
+  .modal {
+    width: 87.5%;
+    padding: 5.5% 6.5%;
+    border-radius: 0.5em;
+  }
+}
+
+.modal-content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+}
+@media all and (max-width: 766px) {
+  .modal-content {
+    padding: 0;
+  }
+}
+.modal-content::-webkit-scrollbar {
+  width: 5px;
+}
+@media all and (max-width: 766px) {
+  .modal-content::-webkit-scrollbar {
+    width: 2px;
+  }
+}
+.modal-content::-webkit-scrollbar-track {
+  background: #ff9639;
+  opacity: 0.5;
+  border-radius: 2.5px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background: #0080cc;
+  border-radius: 2.5px;
+}
+.modal-content .title {
+  margin-bottom: 24px;
+}
+@media all and (max-width: 766px) {
+  .modal-content .title {
+    margin-bottom: 27px;
+  }
+}
+.modal-content .title span:first-child {
+  font-size: 18px;
+}
+@media all and (max-width: 766px) {
+  .modal-content .title span:first-child {
+    font-size: 16px;
+  }
+}
+.modal-content .title span:last-child {
+  font-size: 14px;
+  color: #a5a5a5;
+  margin-left: 15px;
+}
+@media all and (max-width: 1199px) {
+  .modal-content .title span:last-child {
+    display: block;
+    margin-left: 0;
+  }
+}
+@media all and (max-width: 766px) {
+  .modal-content .title span:last-child {
+    font-size: 12px;
+    line-height: 1;
+  }
+}
+.modal-content img {
+  min-width: 500px;
+}
+@media all and (max-width: 766px) {
+  .modal-content img {
+    min-width: auto;
+  }
+}
+
+.servicewarrantyPage .form-bx {
+  margin-top: 85px;
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx {
+    margin-top: 40px;
+  }
+}
+.servicewarrantyPage .form-bx .flex-bx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .flex-bx {
+    display: block;
+  }
+}
+.servicewarrantyPage .form-bx .flex-bx .form-group {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .flex-bx .form-group {
+    width: 100%;
+  }
+}
+.servicewarrantyPage .form-bx .flex-bx input {
+  width: 85%;
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .flex-bx input {
+    width: 100%;
+  }
+}
+.servicewarrantyPage .form-bx .form-group {
+  width: 97%;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+.servicewarrantyPage .form-bx label {
+  font-size: 1.125rem;
+  color: #0080cc;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Noto Sans TC";
+  position: relative;
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx label {
+    font-size: 1rem;
+    margin-bottom: 13px;
+  }
+}
+.servicewarrantyPage .form-bx label span {
+  color: #ff9639;
+  position: absolute;
+  left: -10px;
+  top: -5px;
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx label span {
+    left: -9px;
+    top: -4px;
+  }
+}
+.servicewarrantyPage .form-bx input, .servicewarrantyPage .form-bx select {
+  height: 38px;
+  border: none;
+  border-bottom: 1px solid #a5a5a5;
+  width: 100%;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-size: 1rem;
+  color: #000;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  font-family: "Arial", "Noto Sans TC";
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx input, .servicewarrantyPage .form-bx select {
+    height: 32px;
+    border-radius: 0;
+    -webkit-appearance: none;
+  }
+}
+.servicewarrantyPage .form-bx select {
+  color: #a5a5a5;
+  background: url(../images/sel-arrow.png) no-repeat 100%/14px;
+  padding-right: 20px;
+}
+.servicewarrantyPage .form-bx select.chsel {
+  color: #000;
+}
+.servicewarrantyPage .form-bx .help-block {
+  font-size: 0.875rem;
+  line-height: 1.2;
+  letter-spacing: 0.7px;
+  color: #ff9639;
+  margin-top: 7px;
+  height: 16px;
+}
+.servicewarrantyPage .form-bx .sel-group {
+  padding-right: 55px;
+  position: relative;
+}
+.servicewarrantyPage .form-bx .sel-group .add-btn {
+  position: relative;
+  padding: 15px 0;
+  font-size: 1rem;
+  color: #0080cc;
+  display: block;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .servicewarrantyPage .form-bx .sel-group .add-btn:hover span .ar {
+    background-color: #ff9639;
+  }
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .sel-group .add-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+.servicewarrantyPage .form-bx .sel-group .add-btn span {
+  padding-left: 52px;
+  position: relative;
+  margin-left: 0.2em;
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .sel-group .add-btn span {
+    padding-left: 42px;
+    margin-left: 0.2em;
+  }
+}
+.servicewarrantyPage .form-bx .sel-group .add-btn span .ar {
+  width: 40px;
+  height: 40px;
+  background-color: #0080cc;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .sel-group .add-btn span .ar {
+    width: 30px;
+    height: 30px;
+  }
+}
+.servicewarrantyPage .form-bx .sel-group .add-btn span .ar::before, .servicewarrantyPage .form-bx .sel-group .add-btn span .ar::after {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.servicewarrantyPage .form-bx .sel-group .add-btn span .ar::before {
+  width: 24px;
+  height: 1px;
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .sel-group .add-btn span .ar::before {
+    width: 20px;
+  }
+}
+.servicewarrantyPage .form-bx .sel-group .add-btn span .ar::after {
+  width: 1px;
+  height: 24px;
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .sel-group .add-btn span .ar::after {
+    height: 20px;
+  }
+}
+.servicewarrantyPage .form-bx .sel-group .remove-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #a5a5a5;
+  position: absolute;
+  right: 0;
+  bottom: 88px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+@media (min-width: 768px) {
+  .servicewarrantyPage .form-bx .sel-group .remove-btn:hover {
+    background-color: #ff9639;
+  }
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .sel-group .remove-btn {
+    bottom: 70px;
+    background-color: #0080cc;
+  }
+}
+.servicewarrantyPage .form-bx .sel-group .remove-btn.hid {
+  display: none;
+}
+.servicewarrantyPage .form-bx .sel-group .remove-btn::before, .servicewarrantyPage .form-bx .sel-group .remove-btn::after {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+}
+.servicewarrantyPage .form-bx .sel-group .remove-btn::before {
+  width: 18px;
+  height: 1px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .sel-group .remove-btn::before {
+    width: 20px;
+  }
+}
+.servicewarrantyPage .form-bx .sel-group .remove-btn::after {
+  width: 1px;
+  height: 18px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .sel-group .remove-btn::after {
+    height: 20px;
+  }
+}
+.servicewarrantyPage .form-bx .radio-group .radio-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+.servicewarrantyPage .form-bx .radio-group .form-radio {
+  margin-right: 2.8em;
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .radio-group .form-radio {
+    margin-right: 2em;
+  }
+}
+.servicewarrantyPage .form-bx .radio-group .form-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.servicewarrantyPage .form-bx .radio-group .form-radio input {
+  display: none;
+}
+.servicewarrantyPage .form-bx .radio-group .form-radio input[type=text] {
+  display: block;
+  width: 167px;
+  margin-left: -10px;
+  position: relative;
+  top: -3px;
+  font-size: 1rem;
+  line-height: 1.75;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  color: #000000;
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .radio-group .form-radio input[type=text] {
+    top: 0;
+    height: 28px;
+    width: 110px;
+  }
+}
+.servicewarrantyPage .form-bx .radio-group .form-radio label {
+  padding-left: 35px;
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .servicewarrantyPage .form-bx .radio-group .form-radio label {
+    padding-left: 26px;
+  }
+}
+.servicewarrantyPage .form-bx .radio-group .form-radio label .des-bx {
+  width: calc(88% - 104px);
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .radio-group .form-radio label .des-bx {
+    width: calc(89% - 80px);
+  }
+}
+.servicewarrantyPage .form-bx .radio-group .form-radio input[type=radio] + label:before {
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border: 1px solid #a5a5a5;
+  border-radius: 100px;
+  position: absolute;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  content: "";
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .radio-group .form-radio input[type=radio] + label:before {
+    width: 17px;
+    height: 17px;
+    top: 50%;
+  }
+}
+.servicewarrantyPage .form-bx .radio-group .form-radio input[type=radio]:checked + label:after {
+  width: 12px;
+  height: 12px;
+  background-color: #ff7f00;
+  border-radius: 100px;
+  position: absolute;
+  content: "";
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 5px;
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .radio-group .form-radio input[type=radio]:checked + label:after {
+    left: 4px;
+    width: 9px;
+    height: 9px;
+    top: 50%;
+  }
+}
+.servicewarrantyPage .form-bx .radio-group .shopsel, .servicewarrantyPage .form-bx .radio-group .shopsel2, .servicewarrantyPage .form-bx .radio-group .shopsel3, .servicewarrantyPage .form-bx .radio-group .shopsel4 {
+  display: none;
+}
+.servicewarrantyPage .form-bx .radio-group .shopsel.show, .servicewarrantyPage .form-bx .radio-group .shopsel2.show, .servicewarrantyPage .form-bx .radio-group .shopsel3.show, .servicewarrantyPage .form-bx .radio-group .shopsel4.show {
+  display: block;
+}
+.servicewarrantyPage .form-bx .send-btn {
+  display: block;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: 3%;
+}
+@media (max-width: 767px) {
+  .servicewarrantyPage .form-bx .send-btn {
+    margin-right: 0;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}
+.servicewarrantyPage .form-bx textarea {
+  height: 90px;
+  width: 100%;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #a5a5a5;
+  outline: none;
+  font-size: 1rem;
+  padding-top: 3px;
+  line-height: 1.6;
+  font-family: "Arial", "Noto Sans TC";
+}
+.servicewarrantyPage .form-bx .form-group .buy-product {
+  display: inline-block;
+}
+.servicewarrantyPage .form-bx .product-number {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  color: #a5a5a5;
+  margin-left: 20px;
+}
+@media all and (max-width: 766px) {
+  .servicewarrantyPage .form-bx .product-number {
+    margin-left: 10px;
+  }
+}
+.servicewarrantyPage .form-bx .product-number::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(125%, -60%);
+          transform: translate(125%, -60%);
+  width: 15px;
+  height: 15px;
+  background: url("../images/pupop/question.png") center/cover no-repeat;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.servicewarrantyPage .form-bx .product-number::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(125%, -60%);
+          transform: translate(125%, -60%);
+  width: 15px;
+  height: 15px;
+  background: url("../images/pupop/question_hover.png") center/cover no-repeat;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media (min-width: 768px) {
+  .servicewarrantyPage .form-bx .product-number:hover::after {
+    opacity: 1;
+  }
+  .servicewarrantyPage .form-bx .product-number:hover::before {
+    opacity: 0;
+  }
+}
+.servicewarrantyPage .form-bx .buy-product-box {
+  padding-right: 0;
+}
+.servicewarrantyPage .form-bx .buy-product-box .sel-bx li {
+  margin-top: 2.1em;
+}
+.servicewarrantyPage .form-bx .buy-product-box .sel-bx li:first-child {
+  margin-top: 0.3em;
+}
+.servicewarrantyPage .form-bx .buy-product-box .sel-bx .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media all and (max-width: 766px) {
+  .servicewarrantyPage .form-bx .buy-product-box .sel-bx .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.servicewarrantyPage .form-bx .buy-product-box .sel-bx .flex > div:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 51.5%;
+          flex: 0 0 51.5%;
+}
+@media all and (max-width: 766px) {
+  .servicewarrantyPage .form-bx .buy-product-box .sel-bx .flex > div:first-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+.servicewarrantyPage .form-bx .buy-product-box .sel-bx .flex > div:first-child select {
+  width: 85%;
+}
+@media all and (max-width: 766px) {
+  .servicewarrantyPage .form-bx .buy-product-box .sel-bx .flex > div:first-child select {
+    width: 86%;
+  }
+}
+.servicewarrantyPage .form-bx .buy-product-box .sel-bx .flex > div:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48.5%;
+          flex: 0 0 48.5%;
+}
+@media all and (max-width: 766px) {
+  .servicewarrantyPage .form-bx .buy-product-box .sel-bx .flex > div:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+.servicewarrantyPage .form-bx .buy-product-box .sel-bx .flex > div:last-child input {
+  width: 92%;
+}
+@media all and (max-width: 766px) {
+  .servicewarrantyPage .form-bx .buy-product-box .sel-bx .flex > div:last-child input {
+    width: 86%;
+    margin-top: 1.5em;
+  }
+}
+
+.servicefaqPage .it2-bx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 85px;
+}
+@media (max-width: 767px) {
+  .servicefaqPage .it2-bx {
+    display: block;
+    margin-top: 25px;
+  }
+}
+.servicefaqPage .it2-bx .l-bx {
+  min-width: 200px;
+  padding-right: 20px;
+}
+@media (max-width: 767px) {
+  .servicefaqPage .it2-bx .l-bx {
+    min-width: 100%;
+    padding-right: 0;
+  }
+}
+.servicefaqPage .it2-bx .l-bx ul.sticky {
+  position: fixed;
+  top: 0;
+}
+.servicefaqPage .it2-bx .l-bx ul.change {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+}
+.servicefaqPage .it2-bx .l-bx li {
+  margin-bottom: 10px;
+}
+.servicefaqPage .it2-bx .l-bx li.active a {
+  color: #0080cc;
+}
+.servicefaqPage .it2-bx .l-bx li a {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+@media (min-width: 768px) {
+  .servicefaqPage .it2-bx .l-bx li:hover a {
+    color: #0080cc;
+  }
+}
+.servicefaqPage .it2-bx .l-bx select {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../images/service/arrow_bt.png) no-repeat 95%/15px;
+  background-color: #eeeeee;
+  font-size: 0.9375rem;
+  padding-left: 20px;
+}
+.servicefaqPage .it2-bx .r-bx {
+  width: calc(100% - 200px);
+}
+@media (max-width: 767px) {
+  .servicefaqPage .it2-bx .r-bx {
+    width: 100%;
+    margin-top: 45px;
+  }
+}
+.servicefaqPage .it2-bx .r-bx .ul-bx:not(:last-child) {
+  margin-bottom: 85px;
+}
+@media (max-width: 767px) {
+  .servicefaqPage .it2-bx .r-bx .ul-bx:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
+.servicefaqPage .it2-bx .r-bx .b-ti {
+  color: #0080cc;
+  margin-bottom: 18px;
+}
+@media (max-width: 767px) {
+  .servicefaqPage .it2-bx .r-bx .b-ti {
+    margin-bottom: 8px;
+  }
+}
+.servicefaqPage .it2-bx .r-bx li {
+  padding: 30px 30px 15px 53px;
+  border-bottom: 1px solid #e5e5e5;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.3;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .servicefaqPage .it2-bx .r-bx li {
+    padding: 17px 30px 20px 55px;
+  }
+}
+.servicefaqPage .it2-bx .r-bx li::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 35px;
+  width: 16px;
+  height: 10px;
+  background: url(../images/service/arrow_unhover.png) no-repeat center/16px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+@media (max-width: 767px) {
+  .servicefaqPage .it2-bx .r-bx li::before {
+    top: 28px;
+    width: 15px;
+    height: 8px;
+  }
+}
+.servicefaqPage .it2-bx .r-bx li .ball {
+  width: 41px;
+  height: 41px;
+  background-color: #f5f5f5;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0080cc;
+  border-radius: 50%;
+  line-height: 1.8;
+  left: 0;
+  top: 18px;
+  position: absolute;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+@media (max-width: 767px) {
+  .servicefaqPage .it2-bx .r-bx li .ball {
+    top: 11px;
+    width: 31px;
+    height: 31px;
+    font-size: 1.1875rem;
+    line-height: 1.6;
+  }
+}
+.servicefaqPage .it2-bx .r-bx li .des-ti {
+  font-family: "Noto Sans TC";
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+@media (max-width: 767px) {
+  .servicefaqPage .it2-bx .r-bx li .des-ti {
+    font-size: 0.9375rem;
+  }
+}
+.servicefaqPage .it2-bx .r-bx li .editor_Content {
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .servicefaqPage .it2-bx .r-bx li .editor_Content {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .servicefaqPage .it2-bx .r-bx li.open {
+    padding-bottom: 10px;
+  }
+}
+.servicefaqPage .it2-bx .r-bx li.open::before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.servicefaqPage .it2-bx .r-bx li.open .ball {
+  background-color: #0080cc;
+  color: #fff;
+}
+.servicefaqPage .it2-bx .r-bx li.open .des-ti {
+  color: #0080cc;
+}
+
+.chosen-container {
+  max-width: 100%;
+}
+
+.chosen-container-single .chosen-single {
+  background: url(../images/sel-arrow.png) no-repeat 100%/14px !important;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  font-family: Roboto, Noto Sans TC, sans-serif;
+  color: #000;
+  font-weight: 300;
+  border-bottom: 1px solid #a5a5a5;
+  font-size: 1rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  height: 38px;
+  padding: 0;
+}
+.chosen-container-single .chosen-single span {
+  line-height: 38px;
+}
+
+.chosen-container-single .chosen-default {
+  color: #a5a5a5 !important;
+}

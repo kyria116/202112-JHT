@@ -1,0 +1,228 @@
+@import "mixin";
+
+.newsPage{
+    .sh-banner img{
+        @media (max-width:767px) {
+            top: 46%;
+        }
+    }
+    .news-list{
+        margin-top: 45px;
+        @media (max-width:767px) {
+            margin-top: 10px;
+        }
+        
+        li:not(:last-child){
+            a{
+                border-bottom: 1px solid $hover;
+            }
+        }
+        a{
+            display: flex;
+            position: relative;
+            padding: 40px 0;
+            @media (max-width:767px) {
+                display: block;
+                padding: 25px 0;
+            }
+            @media (min-width:768px) {
+                &:hover{
+                    .img-bx::before{
+                        opacity: 1;
+                    }
+                    .des-bx .des-ti{
+                        color: $hover;
+                    }
+                }
+            }
+        }
+        .da-bx{
+            width: 17%;
+            padding-right: 2%;
+            @media (max-width:767px) {
+                width: 100%;
+                padding-right: 0;
+                display: flex;
+                align-items: center;
+                margin-bottom: 8px;
+            }
+            .ty{
+                font-size: pxToEm(18);
+            }
+            .da{
+                font-size: pxToEm(16);
+                color: $hover;
+                @media (max-width:767px) {
+                    margin-left: 10px;
+                }
+            }
+        }
+        .des-bx{
+            width: 83%;
+            padding: 35px 0;
+            padding-left: calc(268px + 5%);
+            position: relative;
+            @media (max-width:991px) {
+                padding: 10px 0;
+                padding-left: calc(200px + 3%);
+            }
+            @media (max-width:767px) {
+                width: 100%;
+                padding: 0;
+                padding-left: 0;
+            }
+            .img-bx{
+                min-width: 268px;
+                width: 268px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(#000,.5);
+                    transition: .4s ease;
+                    opacity: 0;
+                }
+                @media (max-width:991px) {
+                    min-width: 200px;
+                    width: 200px; 
+                }
+                @media (max-width:767px) {
+                    min-width: 135px;
+                    width: 135px; 
+                }
+            }
+            .bgcover{
+                padding-bottom: 74.6%;
+                background-size: contain !important;
+                background-repeat: no-repeat !important;
+            }
+            .des-ti{
+                line-height: 1.3;
+                @include clamp(1.3,2);
+                margin-bottom: 18px;
+                transition: .4s ease;
+                @media (max-width:767px) {
+                    padding-left: calc(135px + 5%);
+                    margin-bottom: 70px;
+                    height: 2.5em;
+                }
+            }
+            .des{
+                line-height: 1.5;
+                @include clamp(1.5,2);
+                @media (max-width:767px) {
+                    font-size: pxToEm(15);
+                }
+            }
+        }
+    }
+}
+
+.newsdetailPage{
+    .sh-banner img{
+        @media (max-width:767px) {
+            top: 46%;
+        }
+    }
+    .it2-bx{
+        padding-top: 75px;
+        @media (max-width:767px) {
+            padding-top: 35px;
+        }
+        .da-bx{
+            display: flex;
+            align-items: baseline;
+        }
+        .ty{
+            font-size: pxToEm(18);
+        }
+        .da{
+            font-size: pxToEm(16);
+            color: $hover;
+            margin-right: 20px;
+            @media (max-width:767px) {
+                margin-right: 10px;
+            }
+        }
+        .des-ti{
+            font-weight: 500;
+            line-height: 1.2;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            @media (max-width:767px) {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+        .flex-bx{
+            display: flex;
+            flex-wrap: wrap;
+            a{
+                display: block;
+                padding: 6px 13px;
+                padding-top: 8px;
+                border-radius: 4px;
+                border: solid 1px #e5e5e5;
+                font-size: pxToEm(16);
+                line-height: 1.2;
+                color: $hover;
+                transition: .4s ease;
+                margin-bottom: 15px;
+                @media (max-width:767px) {
+                    margin-bottom: 10px;
+                    padding: 4px 11px;
+                    padding-top: 6px;
+                }
+                &:not(:last-child){
+                    margin-right: 15px;
+                    @media (max-width:767px) {
+                        margin-right: 10px;
+                    }
+                }
+                @media (min-width:768px) {
+                    &:hover{
+                        background-color: #ff9639;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .editor_Content{
+            margin-top: 30px;
+            padding-bottom: 75px;
+            border-bottom: 1px solid $hover;
+            @media (max-width:767px) {
+                margin-top: 20px;
+                padding-bottom: 40px;
+            }
+        }
+        .sh-btn{
+            display: block;
+            margin-left: auto;
+            margin-top: 55px;
+            @media (max-width:767px) {
+                margin: 0 auto;
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+.videodetailPage{
+    .it2-bx{
+        padding-top: 0;
+        iframe{
+            width: 100% !important;
+            height: 61vh;
+            @media (max-width:767px) {
+                height: 25vh;
+            }
+        }
+    }
+}

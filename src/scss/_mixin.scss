@@ -1,0 +1,82 @@
+//css變數與function
+$org: #ff6400;
+$grey: #6a6a6a;
+$bg: #f5f5f1;
+$hover:#0080cc;
+$color1:#ff9639;
+//-------------------------font-------------------------//
+
+
+$font-family: 'Noto Sans TC';
+$bo:'Baloo Da 2';
+// 字型大小顏色
+@mixin font-color($color, $weight: 400, $lh: 1.5) {
+    color: $color;
+    font-weight: $weight;
+    line-height: $lh;
+}
+//px轉rem
+@function pxToEm($px, $base: 16) {
+    @return ($px / $base) * 1rem;
+}
+@function pxToRem($px, $base: 16) {
+    @return ($px / $base) * 1rem;
+}
+
+$xxl: 1440px;
+$xl: 1200px;
+$lg: 991px;
+$md: 769px;
+$sm: 576px;
+$xs: 320px;
+@mixin mediaquery($min, $max) {
+    @if $min != null and $max != null {
+        @media all and (min-width: $min) and (max-width: $max - 1) {
+            @content;
+        }
+    } @else if $max == null {
+        @media all and (min-width: $min) {
+            @content;
+        }
+    } @else if $min == null {
+        @media all and (max-width: $max - 1) {
+            @content;
+        }
+    }
+}
+//用法 @include font-size(pxToEm(16),pxToEm(36));
+@mixin font-size($mobile, $desk, $scale: 0.9) {
+    @include mediaquery(null, $sm) {
+        font-size: $mobile;
+    }
+    @include mediaquery($sm, $xxl) {
+        font-size: $desk * $scale;
+    }
+    @include mediaquery($xxl, null) {
+        font-size: $desk;
+    }
+}
+
+//------------------------- 限定行數  行高 行數(行高x行數)x1rem ---------//
+@mixin clamp($lh, $clamp) {
+    height: ($lh * $clamp) * 1em;
+    line-height: $lh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $clamp; /* 第幾行要顯示點點點 */
+    -webkit-box-orient: vertical;
+}
+
+@mixin fontset($px, $lheight, $lspac,$weight:400 ,$color:#000000) {
+    font-size: pxToEm($px);
+    line-height: $lheight;
+    letter-spacing: $lspac + px;
+    font-weight: $weight;
+    color: $color;
+}
+@mixin border($bo:99em){
+    -webkit-border-radius: $bo;
+    -moz-border-radius: $bo;
+    border-radius: $bo;
+}
