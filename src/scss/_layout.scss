@@ -27,7 +27,8 @@ main{
     z-index: 1;
     margin-top:88px;
     padding-bottom: 150px;
-    @media (max-width:768px) {
+    // @media (max-width:768px) {
+    @media (max-width:991px) {
         margin-top: 60px;
         padding-bottom: 95px;
     }
@@ -103,10 +104,19 @@ main{
         height: 100%;
         background-image: linear-gradient(to right, #0080cc, #35b4ff);
         z-index: -1;
+        @media (max-width:1284px) {
+            width: 215px;
+        }
         @media (max-width:1199px) {
             width: 185px;
         }
-        @media (max-width:768px) {
+        // @media (max-width:991px) {
+        //     width: 115px;
+        // }
+        // @media (max-width:768px) {
+        //     width: 155px;
+        // }
+        @media (max-width:991px) {
             width: 155px;
         }
     }
@@ -126,6 +136,10 @@ main{
         background-position: center;
         background-size: contain;
 		text-indent: -10000px;
+        @media (max-width:1284px) {
+            width: 260px;
+            // height: 32px;
+        }
         @media (max-width:1199px) {
             width: 200px;
             height: 32px;
@@ -164,9 +178,15 @@ main{
 	@media (max-width:1199px) {
 		right: 15px;
 	}
-    @media (max-width:768px) {
+    // @media (max-width:991px) {
+	// 	right: 10px;
+	// }
+    @media (max-width:991px) {
         display: none;
     }
+    // @media (max-width:768px) {
+    //     display: none;
+    // }
     @media (min-width:768px) {
         &:hover{
             &::before{
@@ -188,7 +208,14 @@ main{
     @media (max-width:1199px) {
         right: 70px;
     }
-	@media (max-width:768px) {
+    @media (max-width:991px) {
+        right: 50px;
+    }
+	// @media (max-width:768px) {
+    //     right: 57px;
+    //     top: 55%;
+	// }
+    @media (max-width:991px) {
         right: 57px;
         top: 55%;
 	}
@@ -204,7 +231,11 @@ main{
         width: 100%;
         height: 100%;
         border-radius: 50%;
+        @media (max-width:991px) {
+            left: 60%;
+        }
     }
+    
 	span{
 		text-align: center;
 		@include fontset(14,2,0,400,#fff);
@@ -251,7 +282,8 @@ main{
 			}
 		}
 	}
-    @media (max-width:768px) {
+    // @media (max-width:768px) {
+    @media (max-width:991px) {
         &::after{
             opacity: 0;
         }
@@ -288,17 +320,23 @@ main{
         background: #fff;
         opacity: 0;
         transition: .4s ease;
-        @media (max-width:768px) {
+        // @media (max-width:768px) {
+        @media (max-width:991px) {
             bottom: -16px;
         }
     }
 	@media (max-width:1199px) {
 		right: 120px;
 	}
-    @media (max-width:768px) {
+    // @media (max-width:991px) {
+	// 	right: 76px;
+	// }
+    // @media (max-width:768px) {
+    @media (max-width:991px) {
         right: 95px;
         top: 55%;
     }
+
 	@media (min-width:992px) {
 		&:hover{
 			.under-bx2{
@@ -568,9 +606,17 @@ nav{
 	font-weight: bold;
 	position: relative;
     padding-right: 240px;
-	
+	@media (max-width:1466px) {
+        padding-right: 220px;
+    }
+    @media (max-width:1284px) {
+        padding-right: 210px;
+    }
     @media (max-width:1199px) {
         padding-right: 180px;
+    }
+    @media (max-width:991px) {
+        padding-right: 105px;
     }
 	ul{
 		display: flex;
@@ -579,9 +625,12 @@ nav{
 	li{
 		list-style: none;
 		&:not(:last-child){
-            margin-right: 60px;
-            @media (max-width:1450px) {
+            margin-right: 46px;
+            @media (max-width:1466px) {
                 margin-right: 20px;
+            }
+            @media (max-width:1044px) {
+                margin-right: 12px;
             }
             @media (max-width:991px) {
                 margin-right: 5px;
@@ -600,7 +649,8 @@ nav{
 	}
     li.hamenu{
         position: relative;
-        @media (min-width:768px) {
+        // @media (min-width:768px) {
+        @media (min-width:992px) {
             &:hover{
                 .botdes-bx{
                     opacity: 1;
@@ -614,7 +664,8 @@ nav{
                 }
             }
         }
-        @media (max-width:768px) {
+        // @media (max-width:768px) {
+        @media (max-width:991px) {
             margin-bottom: 0px;
         }
         &:before{
@@ -625,7 +676,8 @@ nav{
             height: 42px;
             left: 50%;
             transform: translateX(-50%);
-            @media (max-width:768px) {
+            // @media (max-width:768px) {
+            @media (max-width:991px) {
                 display: none;
             }
         }
@@ -642,7 +694,8 @@ nav{
             opacity: 0;
         }
         >a{
-            @media (max-width:768px) {
+            // @media (max-width:768px) {
+            @media (max-width:991px) {
                 margin-bottom: 44px;
                 position: relative;
                 &::before{
@@ -671,7 +724,8 @@ nav{
             opacity: 0;
             transition:opacity .4s ease;
             pointer-events: none;
-            @media (max-width:768px) {
+            // @media (max-width:768px) {
+            @media (max-width:991px) {
                 opacity: 1;
                 position: fixed;
                 background: hsla(0,0%,100%,0);
@@ -693,7 +747,8 @@ nav{
                 width: 100%;
                 padding: 0 15px;
                 text-align: center;
-                @media (max-width:768px) {
+                // @media (max-width:768px) {
+                @media (max-width:991px) {
                     width: 100%;
                     text-align: left;
                     padding: 0 24px;
@@ -705,7 +760,8 @@ nav{
                     font-size: pxToEm(18);
                     color: $hover;
                     padding-top: 20px;
-                    @media (max-width:768px) {
+                    // @media (max-width:768px) {
+                    @media (max-width:991px) {
                         padding-top: 0;
                         padding-left: 25px;
                         font-size: pxToEm(20);
@@ -727,7 +783,8 @@ nav{
                     }
                 }
                 .lisbx{
-                    @media (max-width:768px) {
+                    // @media (max-width:768px) {
+                    @media (max-width:991px) {
                         display: block;
                     }
                 }
@@ -737,7 +794,8 @@ nav{
                     font-size: pxToEm(16);
                     color: #000;
                     position: relative;
-                    @media (max-width:768px) {
+                    // @media (max-width:768px) {
+                    @media (max-width:991px) {
                         width: 100%;
                         margin-bottom: 44px;
                         margin-top: 0;
@@ -776,7 +834,8 @@ nav{
                             background: $hover;
                             opacity: 0;
                             transition: .4s ease;
-                            @media (max-width:768px) {
+                            // @media (max-width:768px) {
+                            @media (max-width:991px) {
                                 display: none;
                             }
                         }
@@ -961,13 +1020,15 @@ $bar-spacing: 12px;
     }
 }
 
-@media (max-width:768px) {
+// @media (max-width:768px) {
+@media (max-width:991px) {
     nav li:not(:last-child) {
 		margin-right: 25px;
 	}
 }
 
-@media (max-width:768px){
+// @media (max-width:768px) {
+@media (max-width:991px){
 	.menu-wrapper{
 		display: block;
 	}

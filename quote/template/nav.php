@@ -53,6 +53,32 @@
                 </li>
                 <li class="hamenu">
                     <a class="in_servi"  href="javascript:;">
+                        <span>強檔優惠</span>
+                    </a>
+                    <div class="botdes-bx">
+                        <div class="b-lis">
+                            <div class="b-ti mo">
+                            強檔優惠
+                            </div>
+                            <div class="lisbx">
+                                <a href="product.php">
+                                    <span>中慶▼超夏趴3折起</span>
+                                </a>
+                                <a href="product.php">
+                                    <span>爆品快閃★限時開搶!!</span>
+                                </a>
+                                <a href="product.php">
+                                    <span>瑜珈系列 任2件折100</span>
+                                </a>
+                                <a href="product.php">
+                                    <span>福利品特賣 任2件9折</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="hamenu">
+                    <a class="in_servi"  href="javascript:;">
                         <span>活動消息</span>
                     </a>
                     <div class="botdes-bx">

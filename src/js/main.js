@@ -29,6 +29,10 @@ $(document).ready(function () {
             $('.nav_box').removeAttr("style");
             $('.hamburger-menu').removeClass('animate').removeAttr("style");
         }
+        //如果螢幕寬度RESIZE>991時 漢堡選單open移除
+        if ($(this).width() > 980) {
+            $('.nav_box').removeClass('open');
+        }
 
 
     }).resize();

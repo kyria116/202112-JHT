@@ -75,30 +75,20 @@
                         <li>
                             <a href="javascript:;">
                                 <div class="img-bx">
+                                    <img src="dist/images/d_item_1.png">
+                                </div>
+                                <div class="tx f24">
+                                    本月優惠
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="img-bx">
                                     <img src="dist/images/d_item1.png">
                                 </div>
                                 <div class="tx f24">
-                                    按摩椅
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <div class="img-bx">
-                                    <img src="dist/images/d_item2.png">
-                                </div>
-                                <div class="tx f24">
-                                    按摩枕/墊
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <div class="img-bx">
-                                    <img src="dist/images/d_item3.png">
-                                </div>
-                                <div class="tx f24">
-                                    按摩器材
+                                按摩椅
                                 </div>
                             </a>
                         </li>
@@ -108,7 +98,7 @@
                                     <img src="dist/images/d_item4.png">
                                 </div>
                                 <div class="tx f24">
-                                    跑步機
+                                跑步機
                                 </div>
                             </a>
                         </li>
@@ -118,17 +108,27 @@
                                     <img src="dist/images/d_item5.png">
                                 </div>
                                 <div class="tx f24">
-                                    健身器材
+                                健身器材
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a href="javascript:;">
                                 <div class="img-bx">
-                                    <img src="dist/images/d_item6.png">
+                                    <img src="dist/images/d_item3.png">
                                 </div>
                                 <div class="tx f24">
-                                    官網限定優惠組合
+                                按摩器材
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="img-bx">
+                                    <img src="dist/images/d_item_6.png">
+                                </div>
+                                <div class="tx f24">
+                                    瑜珈用品
                                 </div>
                             </a>
                         </li>
