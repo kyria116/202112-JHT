@@ -1,0 +1,1 @@
+$(".b-img").slick({slidesToShow:1,slidesToScroll:1,arrows:!0,dots:!0,fade:!0,asNavFor:".s-img",customPaging:function(s,o){return"<i>"+((o+=1)<10?"0"+o:o)+"</i>  /  <span>"+(s.slideCount<=9?"0"+s.slideCount:s.slideCount)+"</span>"}}),$(".s-img").slick({slidesToShow:3,slidesToScroll:1,asNavFor:".b-img",array:!0,focusOnSelect:!0});

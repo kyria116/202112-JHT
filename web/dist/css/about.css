@@ -1,0 +1,102 @@
+.aboutPage main {
+  background: #0080cc;
+}
+.aboutPage .sh-banner h2 {
+  background: none;
+}
+.aboutPage .sh-banner h2 .e-ti {
+  color: #fff;
+}
+.aboutPage .sh-banner h2 .t-ti {
+  color: #fff;
+}
+.aboutPage .item1 {
+  position: relative;
+}
+.aboutPage .item1 .container {
+  width: 80%;
+}
+@media (max-width: 767px) {
+  .aboutPage .item1 .container {
+    width: 100%;
+  }
+}
+.aboutPage .item1 .it1-bx {
+  position: relative;
+  z-index: 5;
+  padding-bottom: 120px;
+}
+@media (max-width: 767px) {
+  .aboutPage .item1 .it1-bx {
+    padding-bottom: 35px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+.aboutPage .item1 .it1-bx::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 190px;
+  height: calc(100% - 190px);
+  width: calc(100% + 130px);
+  background-color: #fff;
+  z-index: -1;
+  border-radius: 16px;
+}
+@media (max-width: 767px) {
+  .aboutPage .item1 .it1-bx::before {
+    width: 100%;
+    top: 90px;
+    height: calc(100% - 90px);
+    border-radius: 8px;
+  }
+}
+.aboutPage .item1 .it1-bx .img-bx .pc {
+  width: 100%;
+  padding-bottom: 55.9%;
+  border-radius: 16px;
+  margin: 0 auto 110px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.aboutPage .item1 .it1-bx .img-bx .mo {
+  width: 100%;
+  padding-bottom: 126%;
+  border-radius: 8px;
+  margin: 0 auto 40px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.aboutPage .item1 .bg1 {
+  position: absolute;
+  top: 290px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .aboutPage .item1 .bg1 {
+    display: none;
+  }
+}
+.aboutPage .item1 .bg2 {
+  position: absolute;
+  bottom: 210px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .aboutPage .item1 .bg2 {
+    display: none;
+  }
+}

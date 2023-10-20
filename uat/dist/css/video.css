@@ -1,0 +1,183 @@
+@charset "UTF-8";
+.videoPage .item1 {
+  margin-bottom: 45px;
+}
+.videoPage .video-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .videoPage .video-list {
+    display: block;
+  }
+}
+.videoPage .video-list li {
+  border-radius: 16px;
+  border: solid 1px #e5e5e5;
+  position: relative;
+  overflow: hidden;
+  width: 31%;
+  margin-bottom: 55px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+@media (min-width: 768px) {
+  .videoPage .video-list li:not(:nth-child(3n)) {
+    margin-right: 3.5%;
+  }
+}
+@media (max-width: 767px) {
+  .videoPage .video-list li {
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  .videoPage .video-list li:not(:last-child) {
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 768px) {
+  .videoPage .video-list li:hover {
+    border: 1px solid #0080cc;
+  }
+  .videoPage .video-list li:hover .img-bx::before {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+.videoPage .video-list li a {
+  display: block;
+}
+.videoPage .video-list li .img-bx {
+  width: 100%;
+  padding-bottom: 65%;
+  position: relative;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.videoPage .video-list li .img-bx::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.videoPage .video-list li .img-bx::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90px;
+  height: 64px;
+  background: url(../images/video/icon.png) no-repeat center/contain;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+@media (max-width: 991px) {
+  .videoPage .video-list li .img-bx::after {
+    width: 60px;
+    height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .videoPage .video-list li .img-bx::after {
+    width: 45px;
+    height: 32px;
+  }
+}
+.videoPage .video-list li .des-bx {
+  padding: 26px 30px 0px 30px;
+}
+@media (max-width: 767px) {
+  .videoPage .video-list li .des-bx {
+    padding: 22px 25px 0px 25px;
+  }
+}
+.videoPage .video-list li .da {
+  font-size: 1rem;
+  color: #0080cc;
+}
+@media (max-width: 767px) {
+  .videoPage .video-list li .da {
+    font-size: 0.9375rem;
+  }
+}
+.videoPage .video-list li .des-ti {
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 8px;
+  margin-bottom: 25px;
+  height: 2.4em;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* 第幾行要顯示點點點 */
+  -webkit-box-orient: vertical;
+  font-family: "Noto Sans TC";
+}
+@media (max-width: 767px) {
+  .videoPage .video-list li .des-ti {
+    margin-top: 1px;
+    margin-bottom: 20px;
+  }
+}
+.videoPage .video-list li .flex-bx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 30px;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .videoPage .video-list li .flex-bx {
+    padding: 0 25px;
+  }
+}
+.videoPage .video-list li .flex-bx a {
+  display: block;
+  padding: 6px 13px;
+  padding-top: 8px;
+  border-radius: 4px;
+  border: solid 1px #e5e5e5;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #0080cc;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .videoPage .video-list li .flex-bx a {
+    margin-bottom: 10px;
+    padding: 4px 11px;
+    padding-top: 6px;
+  }
+}
+.videoPage .video-list li .flex-bx a:not(:last-child) {
+  margin-right: 15px;
+}
+@media (max-width: 767px) {
+  .videoPage .video-list li .flex-bx a:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .videoPage .video-list li .flex-bx a:hover {
+    background-color: #ff9639;
+    color: #fff;
+  }
+}
