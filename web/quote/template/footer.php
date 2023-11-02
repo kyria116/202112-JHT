@@ -38,9 +38,9 @@
                         <span><?=$phone_info[0]['text_field_1']?></span>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <span>上舜科技有限公司</span><span>統一編號 24966798</span><a href="https://maps.app.goo.gl/v8rjoSconHPxJS5u8" target="_blank" class="addrFooter">台北市松山區南京東路五段198號3樓-1</a>
-                </li>
+                </li> -->
             </ul>
         </div>
         <div class="r-bx">
