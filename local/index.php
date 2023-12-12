@@ -16,20 +16,20 @@
                 <ul>
                     <li>
                         <a href="javascript:;" target="_blank">
-                            <div class="bgcover pc" style="background:url(dist/images/banner-pc.jpg) center center"></div>
-                            <div class="bgcover mo" style="background:url(dist/images/banner-mb.jpg) center center"></div>
+                            <div class="bgcover pc_768" style="background:url(dist/images/banner-pc.jpg) center center"></div>
+                            <div class="bgcover mo_768" style="background:url(dist/images/banner-mb.jpg) center center"></div>
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;" target="_blank">
-                            <div class="bgcover pc" style="background:url(dist/images/banner-pc.jpg) center center"></div>
-                            <div class="bgcover mo" style="background:url(dist/images/banner-mb.jpg) center center"></div>
+                            <div class="bgcover pc_768" style="background:url(dist/images/banner-pc.jpg) center center"></div>
+                            <div class="bgcover mo_768" style="background:url(dist/images/banner-mb.jpg) center center"></div>
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;" target="_blank">
-                            <div class="bgcover pc" style="background:url(dist/images/banner-pc.jpg) center center"></div>
-                            <div class="bgcover mo" style="background:url(dist/images/banner-mb.jpg) center center"></div>
+                            <div class="bgcover pc_768" style="background:url(dist/images/banner-pc.jpg) center center"></div>
+                            <div class="bgcover mo_768" style="background:url(dist/images/banner-mb.jpg) center center"></div>
                         </a>
                     </li>
                 </ul>
@@ -39,20 +39,20 @@
                     <ul>
                         <li>
                             <a href="javascript:;">
-                                <div class="bgcover pc" style="background:url(dist/images/c_img_pc.jpg) center center"></div>
-                                <div class="bgcover mo" style="background:url(dist/images/c_img_mb.jpg) center center"></div>
+                                <div class="bgcover pc_768" style="background:url(dist/images/c_img_pc.jpg) center center"></div>
+                                <div class="bgcover mo_768" style="background:url(dist/images/c_img_mb.jpg) center center"></div>
                             </a>
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <div class="bgcover pc" style="background:url(dist/images/c_img_pc.jpg) center center"></div>
-                                <div class="bgcover mo" style="background:url(dist/images/c_img_mb.jpg) center center"></div>
+                                <div class="bgcover pc_768" style="background:url(dist/images/c_img_pc.jpg) center center"></div>
+                                <div class="bgcover mo_768" style="background:url(dist/images/c_img_mb.jpg) center center"></div>
                             </a>
                         </li>
                         <li>
                             <a href="javascript:;">
-                                <div class="bgcover pc" style="background:url(dist/images/c_img_pc.jpg) center center"></div>
-                                <div class="bgcover mo" style="background:url(dist/images/c_img_mb.jpg) center center"></div>
+                                <div class="bgcover pc_768" style="background:url(dist/images/c_img_pc.jpg) center center"></div>
+                                <div class="bgcover mo_768" style="background:url(dist/images/c_img_mb.jpg) center center"></div>
                             </a>
                         </li>
                     </ul>

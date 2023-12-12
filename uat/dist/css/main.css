@@ -2188,8 +2188,26 @@ input, textarea {
 .pc {
   display: none;
 }
-@media (min-width: 769px) {
+@media (min-width: 992px) {
   .pc {
+    display: block;
+  }
+}
+
+.mo_768 {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mo_768 {
+    display: block;
+  }
+}
+
+.pc_768 {
+  display: none;
+}
+@media (min-width: 769px) {
+  .pc_768 {
     display: block;
   }
 }

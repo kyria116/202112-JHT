@@ -10,6 +10,19 @@
 }
 .pc {
     display: none;
+    // @media (min-width: 769px) {
+    @media (min-width: 992px) {
+        display: block;
+    }
+}
+.mo_768 {
+    display: none;
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+.pc_768 {
+    display: none;
     @media (min-width: 769px) {
         display: block;
     }
